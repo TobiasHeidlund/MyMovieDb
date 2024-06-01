@@ -1,0 +1,56 @@
+.form-section{
+    padding: 0rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    border-radius: 1rem;
+    align-items: start;
+}
+input{
+    width: calc(100% - 2rem);
+    height: 100%;
+    background-color: rgb(88, 88, 88);
+    border-radius: 3rem;
+    border: none ;
+    padding: 0 2rem;
+}
+label{
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+    z-index: 10;
+    color: black;
+}
+img{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.form-box{
+    position: relative;
+    height: 3rem;
+}
+.button-box{
+    display: inline-flex;
+    flex-direction: row;
+    height: 2rem;
+    gap: 3rem;
+}
+.login-button{
+    background-color: black;
+    color: #f5ee2d;
+    order: 2;
+}
+.register-button{
+    width: 55% ;
+    order: 1;
+}
+h3.msg-area{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+}

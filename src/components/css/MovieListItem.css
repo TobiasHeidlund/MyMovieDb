@@ -1,0 +1,30 @@
+.movie-list-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+.poster-image{
+    width: 5rem;
+    padding: 0;
+    aspect-ratio: 2/3;
+    border: 2px solid white
+}
+.movie-title{
+    min-width: calc(100% - 10.5rem);
+    font-size: 20px;
+    text-align: center;
+    text-overflow: clip;
+}
+.like-movie-icon{
+    width: 2rem; 
+    padding: 0;
+}
+.remove-icon{
+    width: 2rem;
+    padding: 0;
+}
+img.filled{
+    background-color: #f5ee2d; ;
+}
