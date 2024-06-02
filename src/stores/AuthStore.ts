@@ -21,29 +21,18 @@ const useAuthStore = create<AuthStore>((set) => ({
 ))
 
 function setCookie(username: string) {
-    document.cookie = JSON.stringify({ username: username })
+    window.sessionStorage.setItem("username",username)
 }
 
 function clearCookie() {
-    document.cookie = ""
+    window.sessionStorage.removeItem("username")
     console.log("CLEARING")
 }
 
 function loadUsername(): string {
     console.log("LOADING USERNAME")
-    var cookie = document.cookie
-    if (cookie != "") {
-        try {
-            var parsed = JSON.parse(cookie)
-            if (parsed != null) {
-                if (parsed.username != undefined) {
-                    console.log(parsed.username)
-                    return parsed.username
-                }
-            }
-        } catch (e) { }
-    }
-    return ""
+    let username = window.sessionStorage.getItem("username")
+    return username? username:""
 }
 
 export default useAuthStore;
