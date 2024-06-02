@@ -1,15 +1,17 @@
-.add-movie-container input{
+.add-movie-container input {
     height: 2rem;
 }
-.add-movie-container ::placeholder{
+
+.add-movie-container ::placeholder {
     color: rgb(189, 189, 189)
 }
-.add-movie-container{
+
+.add-movie-container {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    padding: 0 3rem;
+    width: 75%;
+    padding: 0 2rem;
     gap: 1rem
 }

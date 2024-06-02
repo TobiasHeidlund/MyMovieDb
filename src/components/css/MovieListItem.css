@@ -1,30 +1,59 @@
-.movie-list-container{
+.movie-list-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
+}
+
+.movie-link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    order: 1;
+    width: 100%;
+    color: white;
+    text-decoration-line: none;
 
 }
-.poster-image{
+
+div.button-container {
+    position: relative;
+    width: fit-content;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    order: 2;
+}
+
+.poster-image {
     width: 5rem;
     padding: 0;
     aspect-ratio: 2/3;
     border: 2px solid white
 }
-.movie-title{
+
+.movie-title {
     min-width: calc(100% - 10.5rem);
+    width: 100%;
     font-size: 20px;
     text-align: center;
     text-overflow: clip;
 }
-.like-movie-icon{
-    width: 2rem; 
-    padding: 0;
-}
-.remove-icon{
+
+.like-movie-icon {
     width: 2rem;
     padding: 0;
 }
-img.filled{
-    background-color: #f5ee2d; ;
+
+.remove-icon {
+    width: 2rem;
+    padding: 0;
+}
+
+img.filled {
+    background-color: #f5ee2d;
+    ;
 }

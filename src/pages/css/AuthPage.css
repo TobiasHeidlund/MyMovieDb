@@ -1,13 +1,13 @@
-
-.login-span{
+.login-span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
     height: fit-content;
     height: 100vh;
 }
-.login-section{
+
+.login-section {
     background-color: #f5ee2d;
     border-radius: 1rem;
     width: 90vw;

@@ -1,19 +1,20 @@
 import { create } from 'zustand';
 
 type ApiKeyStore = {
-    apiKey : string,
-    setApiKey : (apiKey:string)=>void,
-    clearApiKey : ()=>void
+    apiKey: string,
+    setApiKey: (apiKey: string) => void,
+    clearApiKey: () => void
 }
 
 const useApiKeyStore = create<ApiKeyStore>((set) => ({
     apiKey: "",
     setApiKey: apiKey => {
-        set({apiKey:apiKey})
+        set({ apiKey: apiKey })
     },
     clearApiKey: () => {
-        set({apiKey:""})
+        set({ apiKey: "" })
     }
 }
 ))
+
 export default useApiKeyStore;
